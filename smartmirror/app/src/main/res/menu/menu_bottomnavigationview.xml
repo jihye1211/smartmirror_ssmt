@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ipItem"
+        android:enabled="true"
+        android:icon="@drawable/ip"
+        android:title="ip" />
+    <item
+        android:id="@+id/voiceItem"
+        android:enabled="true"
+        android:icon="@drawable/voice"
+        android:title="voice"
+        />
+    <item
+        android:id="@+id/mainItem"
+        android:enabled="true"
+        android:icon="@drawable/main"
+        android:title="main"
+        />
+    <item
+        android:id="@+id/mypageItem"
+        android:enabled="true"
+        android:icon="@drawable/mypage"
+        android:title="mypage"
+        />
+    <item
+        android:id="@+id/devItem"
+        android:enabled="true"
+        android:icon="@drawable/dev"
+        android:title="dev"
+        />
+</menu>
+
+

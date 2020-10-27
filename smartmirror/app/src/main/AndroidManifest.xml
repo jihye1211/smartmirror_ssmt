@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.smartmirror">
+    /* 인터넷 사용 퍼미션*/
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    /* 핸드폰 정보 읽어오는 퍼미션*/
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    /* 사용자 정보 읽어오는 퍼미션*/
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    /* 음성 인식을 위한 permission*/
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--페이스북 api 사용-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+
+            android:name=".LoginActivity"
+
+            android:label="@string/app_name"
+ />
+
+
+
+
+        <activity android:name=".Loading"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+
+    </application>
+
+</manifest>

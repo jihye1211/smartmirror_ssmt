@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">smartmirror</string>
+
+
+        //페이스북 앱 키
+        <string name="facebook_app_id">384069339437684</string>
+
+</resources>
+
